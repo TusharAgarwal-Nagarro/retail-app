@@ -6,7 +6,7 @@
 */
 package com.app.retail.service;
 
-import com.app.retail.objects.User;
+import com.app.retail.bo.User;
 
 /**
  * @author tusharagarwal

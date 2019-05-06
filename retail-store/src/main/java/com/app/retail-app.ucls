@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.3" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="com.app.retail.objects.User" project="retail-store" 
-    file="/retail-store/src/main/java/com/app/retail/objects/User.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="com.app.retail.bo.User" project="retail-store" 
+    file="/retail-store/src/main/java/com/app/retail/bo/User.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1237" y="72"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="com.app.retail.objects.Basket" project="retail-store" 
-    file="/retail-store/src/main/java/com/app/retail/objects/Basket.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="com.app.retail.bo.Basket" project="retail-store" 
+    file="/retail-store/src/main/java/com/app/retail/bo/Basket.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="923" y="43"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,8 +19,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.app.retail.objects.Product" project="retail-store" 
-    file="/retail-store/src/main/java/com/app/retail/objects/Product.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="com.app.retail.bo.Product" project="retail-store" 
+    file="/retail-store/src/main/java/com/app/retail/bo/Product.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="556" y="24"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -55,8 +55,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="7" language="java" name="com.app.retail.objects.UserType" project="retail-store" 
-    file="/retail-store/src/main/java/com/app/retail/objects/UserType.java" binary="false" corner="BOTTOM_RIGHT">    
+  <enumeration id="7" language="java" name="com.app.retail.bo.UserType" project="retail-store" 
+    file="/retail-store/src/main/java/com/app/retail/bo/UserType.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1140" y="436"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -64,8 +64,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <enumeration id="8" language="java" name="com.app.retail.objects.ProductType" project="retail-store" 
-    file="/retail-store/src/main/java/com/app/retail/objects/ProductType.java" binary="false" corner="BOTTOM_RIGHT">    
+  <enumeration id="8" language="java" name="com.app.retail.bo.ProductType" project="retail-store" 
+    file="/retail-store/src/main/java/com/app/retail/bo/ProductType.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="180" y="2"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      

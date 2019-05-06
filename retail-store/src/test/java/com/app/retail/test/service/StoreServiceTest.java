@@ -14,11 +14,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.app.retail.objects.Basket;
-import com.app.retail.objects.Product;
-import com.app.retail.objects.ProductType;
-import com.app.retail.objects.User;
-import com.app.retail.objects.UserType;
+import com.app.retail.bo.Basket;
+import com.app.retail.bo.Product;
+import com.app.retail.bo.ProductType;
+import com.app.retail.bo.User;
+import com.app.retail.bo.UserType;
 import com.app.retail.service.StoreService;
 import com.app.retail.service.StoreServiceImpl;
 

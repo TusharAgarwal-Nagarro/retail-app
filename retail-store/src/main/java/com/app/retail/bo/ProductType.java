@@ -4,7 +4,7 @@
  Created On 06-May-2019
 
 */
-package com.app.retail.objects;
+package com.app.retail.bo;
 
 /**
  * @author tusharagarwal

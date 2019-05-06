@@ -8,8 +8,8 @@ package com.app.retail.service;
 
 import java.util.Map.Entry;
 
-import com.app.retail.objects.Product;
-import com.app.retail.objects.User;
+import com.app.retail.bo.Product;
+import com.app.retail.bo.User;
 
 /**
  * @author tusharagarwal
@@ -21,7 +21,7 @@ public class StoreServiceImpl implements StoreService {
 	/**
 	 * Overrides
 	 *
-	 * @see com.app.retail.service.StoreService#calculateBill(com.app.retail.objects.User)
+	 * @see com.app.retail.service.StoreService#calculateBill(com.app.retail.bo.User)
 	 *      to <purpose>
 	 * @param user
 	 * @return

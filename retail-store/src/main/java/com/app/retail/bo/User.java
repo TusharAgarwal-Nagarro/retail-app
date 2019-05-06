@@ -4,7 +4,7 @@
  Created On 03-May-2019
 
 */
-package com.app.retail.objects;
+package com.app.retail.bo;
 
 import java.util.Calendar;
 import java.util.Date;
