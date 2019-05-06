@@ -6,8 +6,6 @@
 */
 package com.app.retail.objects;
 
-import com.app.retail.objects.Interfaces.ProductCategory;
-
 /**
  * @author tusharagarwal
  *
@@ -16,18 +14,18 @@ public class Product {
 
 	private String name;
 	private double price;
-	private ProductCategory productCategory;
+	private ProductType productType;
 
 	/**
 	 * @param name
 	 * @param price
 	 * @param productCategory
 	 */
-	public Product(String name, double price, ProductCategory productCategory) {
+	public Product(String name, double price, ProductType productType) {
 		super();
 		this.name = name;
 		this.price = price;
-		this.productCategory = productCategory;
+		this.productType = productType;
 	}
 
 	/**
@@ -67,18 +65,18 @@ public class Product {
 	}
 
 	/**
-	 * @return the productCategory
+	 * @return the productType
 	 */
-	public ProductCategory getProductCategory() {
-		return productCategory;
+	public ProductType getProductType() {
+		return productType;
 	}
 
 	/**
-	 * @param productCategory
-	 *            the productCategory to set
+	 * @param productType
+	 *            the productType to set
 	 */
-	public void setProductCategory(ProductCategory productCategory) {
-		this.productCategory = productCategory;
+	public void setProductType(ProductType productType) {
+		this.productType = productType;
 	}
 
 }

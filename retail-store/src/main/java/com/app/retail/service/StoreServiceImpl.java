@@ -32,11 +32,11 @@ public class StoreServiceImpl implements StoreService {
 		for (Entry<Product, Integer> productEntry : user.getBasket().getProducts().entrySet()) {
 
 			Product product = productEntry.getKey();
-			if (product.getProductCategory().isUserDiscountAvailable()) {
+			if (product.getProductType().isUserDiscountFlag()) {
 				amount += product.getPrice() * (1 - user.getUserDiscount())
-						* (1 - product.getProductCategory().getDiscountOnCategory());
+						* (1 - product.getProductType().getProductTypeDiscount());
 			} else
-				amount += product.getPrice() * (1 - product.getProductCategory().getDiscountOnCategory());
+				amount += product.getPrice() * (1 - product.getProductType().getProductTypeDiscount());
 		}
 		if (amount >= 100.0)
 			amount = amount - (int) (amount / 100) * 5;

@@ -14,14 +14,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.app.retail.objects.Affiliate;
-import com.app.retail.objects.Apparel;
 import com.app.retail.objects.Basket;
-import com.app.retail.objects.Customer;
-import com.app.retail.objects.Employee;
-import com.app.retail.objects.Grocery;
 import com.app.retail.objects.Product;
+import com.app.retail.objects.ProductType;
 import com.app.retail.objects.User;
+import com.app.retail.objects.UserType;
 import com.app.retail.service.StoreService;
 import com.app.retail.service.StoreServiceImpl;
 
@@ -43,12 +40,12 @@ public class StoreServiceTest {
 	@Test
 	public void testCalculateBill_Emloyee() {
 
-		User user = new Employee("john", new Date());
+		User user = new User("john", new Date(), UserType.EMPLOYEE);
 		Basket basket = new Basket();
 		user.setBasket(basket);
-		Product p1 = new Product("milk", 20.0, new Grocery());
+		Product p1 = new Product("milk", 20.0, ProductType.GROCERY);
 		basket.addToBasket(p1, 1);
-		Product p2 = new Product("shirt", 200.0, new Apparel());
+		Product p2 = new Product("shirt", 200.0, ProductType.APPAREL);
 		basket.addToBasket(p2, 1);
 
 		double amountToPay = storeService.calculateBill(user);
@@ -60,15 +57,15 @@ public class StoreServiceTest {
 	@Test
 	public void testCalculateBill_Affiliate() {
 
-		User user = new Affiliate("bob", new Date());
+		User user = new User("bob", new Date(), UserType.AFFILIATE);
 		Basket basket = new Basket();
 		user.setBasket(basket);
-		Product p1 = new Product("milk", 20.0, new Grocery());
+		Product p1 = new Product("milk", 20.0, ProductType.GROCERY);
 		basket.addToBasket(p1, 2);
 		Product p2 = new Product();
 		p2.setName("trouser");
 		p2.setPrice(100.0);
-		p2.setProductCategory(new Apparel());
+		p2.setProductType(ProductType.APPAREL);
 		basket.addToBasket(p2, 1);
 
 		double amountToPay = storeService.calculateBill(user);
@@ -81,12 +78,12 @@ public class StoreServiceTest {
 	public void testCalculateBill_Customer() throws ParseException {
 
 		SimpleDateFormat sf = new SimpleDateFormat("dd-MM-yyyy");
-		User user = new Customer("john", sf.parse("01-01-2017"));
+		User user = new User("john", sf.parse("01-01-2017"), UserType.CUSTOMER);
 		Basket basket = new Basket();
 		user.setBasket(basket);
-		Product p1 = new Product("milk", 20.0, new Grocery());
+		Product p1 = new Product("milk", 20.0, ProductType.GROCERY);
 		basket.addToBasket(p1, 1);
-		Product p2 = new Product("shirt", 200.0, new Apparel());
+		Product p2 = new Product("shirt", 200.0, ProductType.APPAREL);
 		basket.addToBasket(p2, 1);
 
 		double amountToPay = storeService.calculateBill(user);
@@ -99,12 +96,12 @@ public class StoreServiceTest {
 	public void testCalculateBill_Customer2() throws ParseException {
 
 		SimpleDateFormat sf = new SimpleDateFormat("dd-MM-yyyy");
-		User user = new Customer("john", sf.parse("01-01-2018"));
+		User user = new User("john", sf.parse("01-01-2018"), UserType.CUSTOMER);
 		Basket basket = new Basket();
 		user.setBasket(basket);
-		Product p1 = new Product("milk", 20.0, new Grocery());
+		Product p1 = new Product("milk", 20.0, ProductType.GROCERY);
 		basket.addToBasket(p1, 1);
-		Product p2 = new Product("shirt", 200.0, new Apparel());
+		Product p2 = new Product("shirt", 200.0, ProductType.APPAREL);
 		basket.addToBasket(p2, 1);
 		basket.removeFromBasket(p1);
 
